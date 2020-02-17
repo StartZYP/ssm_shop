@@ -45,6 +45,7 @@
 					<ul>
 						<c:if test="${sessionScope.frontuser==null}">
 							<li id="headerLogin" class="headerLogin" style="display: list-item;">
+                                <a href="<%=basePath %>/user/reg">注册</a>|
 								<a href="<%=basePath %>/user/login">登录</a>|
 							</li>
 						</c:if>
@@ -90,23 +91,15 @@
 						|
 					</li>
 					<li>
-						<a >男士休闲</a>
+						<a >男士运动</a>
 						|
 					</li>
 					<li>
-						<a >女士休闲</a>
+						<a >女士运动</a>
 						|
 					</li>
 					<li>
-						<a>商城积分</a>
-						|
-					</li>
-					<li>
-						<a>儿童休闲</a>
-						|
-					</li>
-					<li>
-						<a>老人休闲</a>
+						<a>运动器材</a>
 						|
 					</li>
 					<li>
@@ -239,10 +232,6 @@
 							|
 						</dd>
 						<dd>
-							<a  target="_blank">蔬菜卡</a>
-							|
-						</dd>
-						<dd>
 							<a  target="_blank">礼品卡</a>
 							|
 						</dd>
@@ -308,7 +297,7 @@
 				</ul>
 			</div>
 			<div class="span24">
-				<div class="copyright">Copyright © 2005-2016 网上商城 版权所有</div>
+				<div class="copyright">Copyright © 2019-2020 网上体育商城 版权所有</div>
 			</div>
 		</div>
 	</div>

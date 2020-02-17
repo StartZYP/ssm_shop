@@ -40,6 +40,7 @@
 			
 			<c:if test="${sessionScope.frontuser==null}">
 				<li id="headerLogin" class="headerLogin" style="display: list-item;">
+                    <a href="<%=basePath %>/user/reg">注册</a>|
 					<a href="<%=basePath %>/user/login">登录</a>|
 				</li>
 			</c:if>	
@@ -94,7 +95,7 @@
 						|
 					</li>
 					<li>
-						<a>商城积分</a>
+						<a>运动器材</a>
 						|
 					</li>
 					<li>

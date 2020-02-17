@@ -21,8 +21,15 @@ public class UserController {
 	private UserService userService;
 
 	@RequestMapping(value="/login",method=RequestMethod.GET)
-	public String tologin(){
+	public String tologin(HttpSession session){
+		session.removeAttribute("msg");
 		return "redirect:/login.jsp";
+	}
+
+	@RequestMapping(value="/reg",method=RequestMethod.GET)
+	public String toreg(HttpSession session){
+		session.removeAttribute("msg");
+		return "redirect:/reg.jsp";
 	}
 	
 	@RequestMapping(value="/login",method=RequestMethod.POST)
@@ -41,27 +48,25 @@ public class UserController {
 			session.setAttribute("msg", "用户或密码错误");
 		}
 		return "forward:/login.jsp";
-//		User exituser =  userService.login(user);
-//
-//		if(exituser ==null){
-//
-//			model.addAttribute("msg","用户名或密码错误");
-//			return "forward:/login.jsp";
-//		}
-//		request.getSession()
-//		.setAttribute("frontuser", exituser.getUsername());
-//		request.getSession()
-//		.setAttribute("frontuserId", exituser.getUid());
-//
-//		String path = (String) request.getSession().getAttribute("orderpath");
-//
-//		if(path!=null){
-
-//			return "redirect:" + path;
-//
-//		}
-//		return "redirect:/product/frontlist";
 	}
+
+	@RequestMapping(value="/register",method=RequestMethod.POST)
+	public String register(User user,HttpSession session){
+		try {
+			int checkusername = userService.checkusername(user.getUsername());
+			if (checkusername>=1){
+				session.setAttribute("msg", "此用户名已注册");
+			}else {
+				userService.regist(user);
+				session.setAttribute("msg", "注册成功");
+			}
+		} catch (Exception e) {
+			session.setAttribute("msg", "此用户名已注册");
+		}
+		return "forward:/reg.jsp";
+	}
+
+
 	@RequestMapping(value="/logout",method=RequestMethod.GET)
 	public String logout(User user,HttpSession session){
 

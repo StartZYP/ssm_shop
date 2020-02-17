@@ -4,7 +4,7 @@ import cn.edu.nuc.shop.entiry.User;
 
 public interface UserService {
 	
-//	int regist(User user);
+	int regist(User user);
 	
 	int checkusername(String username);
 	

@@ -19,7 +19,7 @@ public class OrderInterceptor extends HandlerInterceptorAdapter {
 
 	           request.getSession().setAttribute("orderpath", request.getServletPath());
 	           
-	           response.sendRedirect(request.getServletContext().getContextPath()+"/user/login");
+	           response.sendRedirect(request.getContextPath()+"/user/login");
 	            return false;  
 	        }else  
 	            return true;     

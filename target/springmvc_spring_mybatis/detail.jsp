@@ -69,6 +69,7 @@
 			<ul>
 				<c:if test="${sessionScope.frontuser==null}">
 				<li id="headerLogin" class="headerLogin" style="display: list-item;">
+					<a href="<%=basePath %>/user/reg">注册</a>|
 					<a href="<%=basePath %>/user/login">登录</a>|
 				</li>
 			</c:if>	
@@ -144,62 +145,62 @@
 			<div class="hotProductCategory">
 						<dl>
 							<dt>
-								<a >女人</a>
+								<a >女性</a>
 							</dt>
 									<dd>
-										<a >女鞋</a>
+										<a >运动鞋</a>
 									</dd>
 									<dd>
-										<a>毛呢外套</a>
+										<a>运动外套</a>
 									</dd>
 									<dd>
-										<a>卫衣</a>
+										<a>涉水鞋</a>
 									</dd>
 									<dd>
-										<a>打底裤</a>
+										<a>登山鞋</a>
 									</dd>
 						</dl>
 						<dl>
 							<dt>
-								<a>男人</a>
+								<a>男性</a>
 							</dt>
 									<dd>
-										<a>男外套</a>
+										<a>冲锋衣</a>
 									</dd>
 									<dd>
-										<a>男鞋</a>
+										<a>运动鞋</a>
 									</dd>
 									
 						</dl>
 						<dl>
 							<dt>
-								<a >母婴</a>
+								<a >体育用品</a>
 							</dt>
 									<dd>
-										<a>猪肉</a>
+										<a>游泳用品</a>
 									</dd>
 									<dd>
-										<a>爱他美</a>
+										<a>球类用品</a>
 									</dd>
 									<dd>
-										<a>毛衣</a>
+										<a>体育护具</a>
 									</dd>
 									<dd>
-										<a>外套</a>
+										<a>漂流用具</a>
 									</dd>
 						</dl>
 						<dl>
 							<dt>
-								<a>美妆</a>
+								<a>健身器材</a>
 							</dt>
 									<dd>
-										<a>口红</a>
+										<a>杠铃</a>
 									</dd>
 									<dd>
-										<a>面膜</a>
+										<a>哑铃</a>
 									</dd>
 									<dd>
-										<a>眉笔</a>
+										<a>跑步机</a>
 									</dd>
 						</dl>
 						
@@ -339,17 +340,17 @@
 						|
 					</li>
 					<li>
-						<a >SHOP++官网</a>
+						<a >SHOP运动商品++官网</a>
 						|
 					</li>
 					<li>
-						<a>SHOP++论坛</a>
+						<a>SHOP运动商品++论坛</a>
 						
 					</li>
 		</ul>
 	</div>
 	<div class="span24">
-		<div class="copyright">Copyright © 2005-2016 网上商城 版权所有</div>
+		<div class="copyright">Copyright © 2019-2020 网上体育商城 版权所有</div>
 	</div>
 </div>
 </body>

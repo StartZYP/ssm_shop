@@ -8,12 +8,10 @@
 	String basePath = request.getScheme() + "://"
 			+ request.getServerName() + ":" + request.getServerPort()
 			+ path + "/";
+        Object exituser= session.getAttribute("frontuser");
+        Forder forder = (Forder)session.getAttribute("forder");
 %>
 
-<%
-Object exituser= session.getAttribute("frontuser");
-Forder forder = (Forder)session.getAttribute("forder");
-%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0043)http://localhost:8080/mango/cart/list.jhtml -->
@@ -44,12 +42,13 @@ Forder forder = (Forder)session.getAttribute("forder");
 			<ul>
 					<c:if test="${sessionScope.frontuser==null}">
 				<li id="headerLogin" class="headerLogin" style="display: list-item;">
+					<a href="<%=basePath %>/user/reg">注册</a>|
 					<a href="<%=basePath %>/user/login">登录</a>|
 				</li>
 			</c:if>	
 			<c:if test="${sessionScope.frontuser!=null}">
 				<li id="headerLogin" class="headerLogin" style="display: list-item;">
-					<a href="javascript:void()">${sessionScope.frontuser}</a>|
+					<a >${sessionScope.frontuser}</a>|
 				</li>
 			</c:if>	
 				<li id="headerUsername" class="headerUsername"></li>
@@ -73,7 +72,7 @@ Forder forder = (Forder)session.getAttribute("forder");
 			</ul>
 		</div>
 		<div class="cart">
-			<a href="<%=basePath %>/car.jsp">购物车</a>
+			<a href="<%=basePath %>car.jsp">购物车</a>
 		</div>
 			<div class="phone">
 				客服热线:
@@ -83,7 +82,7 @@ Forder forder = (Forder)session.getAttribute("forder");
 	<div class="span24">
 	<ul class="mainNav">
 						<li>
-						<a href="<%=basePath %>/product/frontlist">首页</a>
+						<a href="<%=basePath %>product/frontlist">首页</a>
 						|
 					</li>
 					<li>
@@ -129,7 +128,7 @@ Forder forder = (Forder)session.getAttribute("forder");
 						<th>操作</th>
 					</tr>
 					<c:forEach items="${forder.sorderSet}" var="sorder">
-					
+
 						<tr>
 							<td width="60">
 								<input type="hidden" name="id" value="${sorder.product.pid}">
@@ -219,7 +218,7 @@ Forder forder = (Forder)session.getAttribute("forder");
 		</ul>
 	</div>
 	<div class="span24">
-		<div class="copyright">Copyright © 2005-2016 网上商城 版权所有</div>
+		<div class="copyright">Copyright © 2019-2020 网上体育商城 版权所有</div>
 	</div>
 </div>
 </body></html>

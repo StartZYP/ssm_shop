@@ -15,7 +15,7 @@ public class BankInterceptor extends HandlerInterceptorAdapter {
 		 String username =  (String)request.getSession().getAttribute("adminusername");   
 	        if(username == null){
 	           
-	           response.sendRedirect(request.getServletContext().getContextPath()+"/admin/login");
+	           response.sendRedirect(request.getContextPath()+"/admin/login");
 	            return false;  
 	        }else  
 	            return true;     

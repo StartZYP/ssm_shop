@@ -1,5 +1,6 @@
 package cn.edu.nuc.shop.service.impl;
 
+import java.util.Date;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -46,9 +47,9 @@ ForderService {
 	@Transactional
 	@Override
 	public int insertOrder(Forder forder,Forder sessionforder) throws Exception  {
+		forder.setDate(new Date());
 		//插入订单
 		int count = forderMapper.insert(forder);
-		
 		if(count<=0){
 			throw new Exception("订单插入异常");
 		}else{

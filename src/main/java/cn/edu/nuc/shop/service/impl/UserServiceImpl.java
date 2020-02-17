@@ -15,11 +15,10 @@ public class UserServiceImpl implements UserService {
 	@Autowired
 	private UserMapper userMapper;
 
-//	@Override
-//	public int regist(User user) {
-//
-//		return	userMapper.insert(user);
-//	}
+	@Override
+	public int regist(User user) {
+		return	userMapper.insert(user);
+	}
 
 	@Override
 	public int checkusername(String username) {

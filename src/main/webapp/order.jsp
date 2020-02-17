@@ -106,16 +106,14 @@
 			
 				
 				$("#button").click(function(e){
-					
+
 					if(nameflag && phoneflag && addressflag && postflag){
-						
+
 						$("form").submit();
 					}
 					
 				});
-				
-				
-		});	
+		});
 </script>	
 </head>
 <body>
@@ -139,12 +137,13 @@
 			<ul>
 					<c:if test="${sessionScope.frontuser==null}">
 				<li id="headerLogin" class="headerLogin" style="display: list-item;">
+					<a href="<%=basePath %>/user/reg">注册</a>|
 					<a href="<%=basePath %>/user/login">登录</a>|
 				</li>
 			</c:if>	
 			<c:if test="${sessionScope.frontuser!=null}">
 				<li id="headerLogin" class="headerLogin" style="display: list-item;">
-					<a href="javascript:void()">${sessionScope.frontuser}</a>|
+					<a >${sessionScope.frontuser}</a>|
 				</li>
 			</c:if>	
 			
@@ -190,7 +189,7 @@
 						|
 					</li>
 					<li>
-						<a>商城积分</a>
+						<a>运动器材</a>
 						|
 					</li>
 					<li>

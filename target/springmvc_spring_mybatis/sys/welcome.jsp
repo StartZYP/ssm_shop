@@ -39,7 +39,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<div class="span12">
 							<div class="hero-unit" style="margin-top:200px;">
 							<h1 style="padding-left:100px;">
-								欢迎使用卖家管理系统！
+								欢迎使用体育商城卖家管理系统！
 							</h1>
 				
 							</div>

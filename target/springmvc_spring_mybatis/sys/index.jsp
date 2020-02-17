@@ -82,7 +82,7 @@
 					</li>
 
 				</ul>
-				<a class="brand" href="#"><span class="first">欢迎使用</span> <span
+				<a class="brand" href="#"><span class="first">欢迎使用体育商城</span> <span
 					class="second">卖家管理系统</span> </a>
 			</div>
 		</div>
