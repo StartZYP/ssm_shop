@@ -86,26 +86,7 @@
                 <a href="<%=basePath %>/product/frontlist">首页</a>
                 |
             </li>
-            <li>
-                <a >男士休闲</a>
-                |
-            </li>
-            <li>
-                <a >女士休闲</a>
-                |
-            </li>
-            <li>
-                <a>运动器材</a>
-                |
-            </li>
-            <li>
-                <a>儿童休闲</a>
-                |
-            </li>
-            <li>
-                <a>老人休闲</a>
-                |
-            </li>
+            
             <li>
                 <a>联系我们</a>
                 |
