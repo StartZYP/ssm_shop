@@ -18,4 +18,5 @@ public interface AdminMapper {
     int updateByPrimaryKey(Admin record);
     
     Admin findByAdmin(@Param("username") String username,@Param("password") String password);
+
 }
