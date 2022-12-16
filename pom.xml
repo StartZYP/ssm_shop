@@ -9,7 +9,7 @@
   <properties>
   	<project.build.sourceEncoding>utf-8
   	</project.build.sourceEncoding>
-  	<spring.version>4.3.3.RELEASE</spring.version>
+  	<spring.version>5.2.20.RELEASE</spring.version>
   	<junit.version>4.12</junit.version>
   	<aspectj.version>1.8.9</aspectj.version>
   	<jackson.json.version>2.7.4</jackson.json.version>
